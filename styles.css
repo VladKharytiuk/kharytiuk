@@ -108,7 +108,7 @@ h1 {
 .thumb-mail {
   position: relative;
   &::after {
-    content: "Contact me";
+    content: "Mail me";
     position: absolute;
     text-align: center;
     width: 100%;
