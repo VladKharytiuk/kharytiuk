@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #463f3fae;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+.container {
+  outline: 1px solid #e3dada;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(246, 246, 246);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 180px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thumb {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  & li {
+    position: relative;
+  }
+}
+
+.thumb .dropdown {
+  display: none;
+  position: absolute;
+  top: 86px;
+  left: -180px;
+  align-items: center;
+  background-color: darkgray;
+  list-style: none;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.thumb li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropdown-icons {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+.svg-icons {
+  cursor: pointer;
+  fill: #e3dada;
+  width: 40px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    fill: #20a1eb;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
